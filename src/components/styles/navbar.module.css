@@ -1,0 +1,28 @@
+.navbar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  top: 0;
+  left: 0;
+
+  position: fixed;
+  background-image: url("/image/coffee_background.jpg");
+  background-size: cover;
+  width: 100%;
+  color: white;
+}
+
+.siteLogo {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Libre Baskerville", serif;
+}
+
+.siteLogo img {
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 3px solid rgb(93, 24, 24);
+}
