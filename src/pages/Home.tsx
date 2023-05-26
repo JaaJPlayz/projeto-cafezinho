@@ -4,7 +4,10 @@ const Home = () => {
   return (
     <>
       <div className={styles.home}>
-        <h1>Welcome to Home page</h1>
+        <div className={styles.coffeeAsciiDiv}>
+          <img src="/image/coffee_ascii.png" alt="" />
+          <h1>Venha tomar um cafézinho conosco!</h1>
+        </div>
       </div>
     </>
   );

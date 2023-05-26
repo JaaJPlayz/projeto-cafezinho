@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Recommendations from "./pages/Recommendations";
 import Timer from "./pages/Timer";
+import Copyright from "./components/Copyright";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/recommendations" element={<Recommendations />} />
           <Route path="/timer" element={<Timer />} />
         </Routes>
+        <Copyright />
       </Router>
     </>
   );

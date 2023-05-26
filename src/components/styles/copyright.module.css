@@ -1,0 +1,11 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  background-image: url("../../../public/image/coffee_background.jpg");
+  background-size: cover;
+  color: white;
+  font-size: 20px;
+}

@@ -5,7 +5,7 @@
 
 Pending Tasks (Development stuff):
 -> Make a subnavbar for project's links and navigation [x]
--> Make the Home page of the project []
+-> Make the Home page of the project [x]
 -> Make the Timer component []
 -> Make the Timer page []
 -> Make a page for anime recomendations on crunchyroll []
