@@ -4,7 +4,7 @@
 😁 Seja bem-vindo(a)!
 
 Pending Tasks (Development stuff):
--> Make a subnavbar for project's links and navigation []
+-> Make a subnavbar for project's links and navigation [x]
 -> Make the Home page of the project []
 -> Make the Timer component []
 -> Make the Timer page []
