@@ -1,8 +1,10 @@
+import { TimerHook } from "../hooks/TimerHook";
+
 const Timer = () => {
   return (
     <>
       <div className="timer">
-        <h1>Welcome to Timer page</h1>
+        <TimerHook deadline="2023-05-26T10:16:30" />
       </div>
     </>
   );
