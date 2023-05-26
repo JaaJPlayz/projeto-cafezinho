@@ -7,3 +7,8 @@
   height: calc(100vh - 82.88px - 63px);
   font-family: "Libre Baskerville", serif;
 }
+
+.coffeeAsciiDiv img {
+  min-height: 20vh;
+  max-height: 517px;
+}
