@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import styles from "./styles/row4.module.css";
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;
@@ -19,7 +20,7 @@ export const TimerHook = ({ deadline = new Date().toString() }) => {
   }, [parsedDeadline]);
 
   return (
-    <div className="timer">
+    <div className={styles.row4}>
       {Object.entries({
         Days: time / DAY,
         Hours: (time / HOUR) % 24,
