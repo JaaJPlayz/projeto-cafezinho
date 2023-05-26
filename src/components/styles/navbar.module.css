@@ -3,10 +3,6 @@
   align-items: center;
   justify-content: space-between;
 
-  top: 0;
-  left: 0;
-
-  position: fixed;
   background-image: url("/image/coffee_background.jpg");
   background-size: cover;
   width: 100%;
@@ -25,4 +21,40 @@
   margin-right: 20px;
   border-radius: 50%;
   border: 3px solid rgb(93, 24, 24);
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(250, 246, 239);
+  border: 3px solid rgb(93, 24, 24);
+  margin-right: 20px;
+  padding: 12.5px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.navLinks a {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+  animation: bounce;
+  animation-duration: 0.2s;
 }
