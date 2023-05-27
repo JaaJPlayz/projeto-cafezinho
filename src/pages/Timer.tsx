@@ -59,7 +59,9 @@ const Timer = () => {
               onChange={(e) => setSeconds(parseInt(e.target.value))}
             />
             <button onClick={handleClick}>Start</button>
-            <button onClick={() => window.location.reload()}>Stop</button>
+            <button>
+              <a href="#">Stop</a>
+            </button>
           </div>
         </div>
       </div>
