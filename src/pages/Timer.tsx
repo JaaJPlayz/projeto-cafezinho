@@ -1,33 +1,29 @@
 import styles from "./styles/timer.module.css";
-import { useState, useCallback } from "react";
+import { useState } from "react";
 
 const Timer = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const handleClick = useCallback(
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (e: any) => {
-      e.preventDefault();
-      setMinutes(e.target.value);
-      setSeconds(e.target.value);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleClick = (e: any) => {
+    setMinutes(e.target.value);
+    setSeconds(e.target.value);
 
-      let totalSeconds = minutes * 60 + seconds;
+    let totalSeconds = minutes * 60 + seconds;
 
-      const timer = setInterval(() => {
-        if (totalSeconds <= 0) {
-          clearInterval(timer);
-        } else {
-          totalSeconds--;
-          const newMinutes = Math.floor(totalSeconds / 60);
-          const newSeconds = totalSeconds % 60;
-          setMinutes(newMinutes);
-          setSeconds(newSeconds);
-        }
-      }, 1000);
-    },
-    [minutes, seconds]
-  );
+    const timer = setInterval(() => {
+      if (totalSeconds <= 0) {
+        clearInterval(timer);
+      } else {
+        totalSeconds--;
+        const newMinutes = Math.floor(totalSeconds / 60);
+        const newSeconds = totalSeconds % 60;
+        setMinutes(newMinutes);
+        setSeconds(newSeconds);
+      }
+    }, 1000);
+  };
 
   return (
     <>
@@ -63,14 +59,7 @@ const Timer = () => {
               onChange={(e) => setSeconds(parseInt(e.target.value))}
             />
             <button onClick={handleClick}>Start</button>
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.reload();
-              }}
-            >
-              Stop
-            </button>
+            <button onClick={() => window.location.reload()}>Stop</button>
           </div>
         </div>
       </div>
