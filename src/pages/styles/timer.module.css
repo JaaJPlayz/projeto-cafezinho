@@ -54,3 +54,7 @@
 .seconds {
   min-height: 256px;
 }
+
+.inputsDiv button {
+  min-width: 224px;
+}
