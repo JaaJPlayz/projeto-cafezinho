@@ -1,0 +1,82 @@
+.recommendations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 82.88px - 63px);
+}
+
+.anime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 50vw;
+  min-height: calc(100vh - 82.88px - 63px);
+}
+
+.music {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-width: 50vw;
+  min-height: calc(100vh - 82.88px - 63px);
+}
+
+.animeContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  background-image: url("/image/coffee_background.jpg");
+  min-width: 400px;
+  min-height: 400px;
+  border-radius: 10px;
+}
+
+.musicContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  background-image: url("/image/coffee_background.jpg");
+  min-width: 400px;
+  min-height: 400px;
+  border-radius: 10px;
+}
+
+.listsTitles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(201, 188, 167);
+  border-radius: 10px;
+
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 50px;
+  margin-bottom: -40px;
+}
+
+ul * {
+  background-color: rgb(201, 188, 167);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  text-decoration: underline;
+}

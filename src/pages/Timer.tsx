@@ -5,6 +5,7 @@ const Timer = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleClick = (e: any) => {
     setMinutes(e.target.value);
     setSeconds(e.target.value);
