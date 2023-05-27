@@ -4,7 +4,53 @@
   align-items: center;
   flex-direction: row;
   height: 500px;
-  height: calc(100vh - 82.88px - 63px);
+  min-height: calc(100vh - 82.88px - 63px);
   margin-top: 0;
   position: relative;
+}
+
+.timerContent {
+  background-image: url("/image/coffee_background.jpg");
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 500px;
+}
+
+.timerContent * {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: rgb(201, 188, 167);
+  padding: 10px;
+  min-width: 200px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.timerContent * p {
+  font-size: 30px;
+}
+
+.timerContent * h1 {
+  font-size: 60px;
+}
+
+.inputsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 256px;
+}
+
+.minutes {
+  min-height: 256px;
+}
+
+.seconds {
+  min-height: 256px;
 }
