@@ -7,7 +7,11 @@ const Recommendations = () => {
         <div className={styles.anime}>
           <div className={styles.animeContent}>
             <div className={styles.listsTitles}>
-              <h1>Anime</h1>
+              <h1>
+                <a href="https://www.crunchyroll.com/search" target="_blank">
+                  Anime
+                </a>
+              </h1>
             </div>
             <ul>
               <li>
@@ -96,7 +100,11 @@ const Recommendations = () => {
         <div className={styles.music}>
           <div className={styles.musicContent}>
             <div className={styles.listsTitles}>
-              <h1>Music</h1>
+              <h1>
+                <a href="https://open.spotify.com/" target="_blank">
+                  Music
+                </a>
+              </h1>
             </div>
             <ul>
               <li>

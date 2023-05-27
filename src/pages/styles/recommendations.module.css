@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding: 10px;
+  padding: 30px;
   background-image: url("/image/coffee_background.jpg");
   min-width: 400px;
   min-height: 400px;
@@ -41,7 +41,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding: 10px;
+  padding: 30px;
   background-image: url("/image/coffee_background.jpg");
   min-width: 400px;
   min-height: 400px;
@@ -63,13 +63,15 @@ ul {
   padding: 0;
   padding-bottom: 50px;
   margin-bottom: -40px;
+  max-height: 410px;
 }
 
 ul * {
   background-color: rgb(201, 188, 167);
   border-radius: 10px;
-  margin: 5px;
   padding: 10px;
+  margin-bottom: 5px;
+  min-width: 400px;
 }
 
 a {
@@ -79,4 +81,12 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+ul :last-child {
+  margin-bottom: 0;
+}
+
+li {
+  text-align: center;
 }
