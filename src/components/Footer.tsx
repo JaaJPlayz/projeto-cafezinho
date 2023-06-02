@@ -5,8 +5,8 @@ const Footer = () => {
     <>
       <div className={styles.footer}>
         <h2>
-          ☕ Este é um projeto presente, dedicado a todos os estudantes da turma
-          34 da Trybe! ☕
+          ☕ Este é um projeto presente, dedicado a todos os participantes da
+          Turma 34 da Trybe! ☕
         </h2>
       </div>
     </>
