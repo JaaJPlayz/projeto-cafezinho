@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 82.88px - 63px);
+  min-height: calc(100vh - 83px - 83px);
 }
 
 .anime {
@@ -11,7 +11,7 @@
   justify-content: center;
   flex-direction: column;
   min-width: 50vw;
-  min-height: calc(100vh - 82.88px - 63px);
+  min-height: calc(100vh - 83px - 83px);
 }
 
 .music {
@@ -21,7 +21,7 @@
   flex-direction: column;
 
   min-width: 50vw;
-  min-height: calc(100vh - 82.88px - 63px);
+  min-height: calc(100vh - 83px - 83px);
 }
 
 .animeContent {

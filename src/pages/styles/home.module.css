@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
-  height: calc(100vh - 82.88px - 63px);
+  min-height: calc(100vh - 83px - 83px);
   font-family: "Libre Baskerville", serif;
 }
 

@@ -1,0 +1,13 @@
+.footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("/image/coffee_background.jpg");
+  background-size: cover;
+  width: 100%;
+  color: white;
+  height: 83px;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+}

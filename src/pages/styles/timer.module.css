@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: row;
   height: 500px;
-  min-height: calc(100vh - 82.88px - 63px);
+  min-height: calc(100vh - 83px - 83px);
   margin-top: 0;
   position: relative;
 }
