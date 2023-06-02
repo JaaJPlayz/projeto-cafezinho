@@ -5,7 +5,7 @@ const Home = () => {
     <>
       <div className={styles.home}>
         <div className={styles.coffeeAsciiDiv}>
-          <img src="/image/coffee_ascii.png" alt="" />
+          <img src="/image/logo.jpg" alt="cafe" />
           <h1>Venha tomar um cafézinho conosco!</h1>
         </div>
       </div>
