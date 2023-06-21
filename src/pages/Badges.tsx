@@ -11,7 +11,7 @@ const Badges = () => {
           </div>
 
           <div className={styles.badgeStand}>
-            <img src="/image/mario-icon.png" alt="jason-icon" width={"50px"} />
+            <img src="/image/mario-icon.png" alt="mario-icon" width={"50px"} />
           </div>
 
           {Array.from({ length: 34 }).map((_, index) => (
