@@ -4,3 +4,16 @@
   justify-content: center;
   min-height: calc(100vh - 83px - 83px);
 }
+
+.badgesContent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.badgeStand {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
