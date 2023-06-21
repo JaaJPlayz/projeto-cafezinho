@@ -15,7 +15,13 @@ const Badges = () => {
           </div>
 
           {Array.from({ length: 34 }).map((_, index) => (
-            <div key={index} className={styles.badgeStand}></div>
+            <div key={index} className={styles.badgeStand}>
+              <img
+                src="/image/question-mark.png"
+                alt="question-mark"
+                width={"50px"}
+              />
+            </div>
           ))}
         </div>
       </div>
