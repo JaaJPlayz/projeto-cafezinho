@@ -4,6 +4,7 @@ const Badges = () => {
   return (
     <>
       <div className={styles.badges}>
+        <h1>Conquered Badges</h1>
         <div className={styles.badgesContent}>
           <div className={styles.badgeStand}>
             <img src="/image/jason-icon.png" alt="jason-icon" width={"50px"} />
