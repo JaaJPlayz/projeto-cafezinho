@@ -7,6 +7,11 @@
   min-height: calc(100vh - 83px - 83px);
 }
 
+.badges h1 {
+  width: 660px;
+  text-align: center;
+}
+
 .badgesContent {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -15,6 +20,25 @@
   border: 3px solid black;
   border-radius: 10px;
   padding: 20px;
+  position: relative;
+}
+
+.badgesContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/image/coffee_background.jpg");
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.badgesContent > * {
+  position: relative;
+  z-index: 1;
+  background-color: rgb(232, 210, 187);
 }
 
 .badgeStand {
