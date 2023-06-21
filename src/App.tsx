@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Recommendations from "./pages/Recommendations";
 import Timer from "./pages/Timer";
+import Badges from "./pages/Badges";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/recommendations" element={<Recommendations />} />
           <Route path="/timer" element={<Timer />} />
+          <Route path="/badges" element={<Badges />}></Route>
         </Routes>
         <Footer />
       </Router>
