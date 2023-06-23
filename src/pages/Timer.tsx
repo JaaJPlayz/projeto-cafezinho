@@ -1,28 +1,32 @@
 import styles from "./styles/timer.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Timer = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
+  const [isTimerRunning, setIsTimerRunning] = useState(false);
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleClick = (e: any) => {
-    setMinutes(e.target.value);
-    setSeconds(e.target.value);
-
+  useEffect(() => {
     let totalSeconds = minutes * 60 + seconds;
+    let timer: any = null;
 
-    const timer = setInterval(() => {
-      if (totalSeconds <= 0) {
-        clearInterval(timer);
-      } else {
+    if (isTimerRunning && totalSeconds > 0) {
+      timer = setInterval(() => {
         totalSeconds--;
         const newMinutes = Math.floor(totalSeconds / 60);
         const newSeconds = totalSeconds % 60;
         setMinutes(newMinutes);
         setSeconds(newSeconds);
-      }
-    }, 1000);
+      }, 1000);
+    }
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [minutes, seconds, isTimerRunning]);
+
+  const handleClick = () => {
+    setIsTimerRunning((prevIsTimerRunning) => !prevIsTimerRunning);
   };
 
   return (
@@ -58,7 +62,9 @@ const Timer = () => {
               value={seconds}
               onChange={(e) => setSeconds(parseInt(e.target.value))}
             />
-            <button onClick={handleClick}>Start</button>
+            <button onClick={handleClick}>
+              {isTimerRunning ? "Stop" : "Start"}
+            </button>
           </div>
         </div>
       </div>
