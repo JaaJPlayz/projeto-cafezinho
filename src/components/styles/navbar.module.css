@@ -41,21 +41,3 @@
   text-decoration: none;
   color: black;
 }
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.navLinks a:hover {
-  text-decoration: underline;
-  animation: bounce;
-  animation-duration: 0.2s;
-}
