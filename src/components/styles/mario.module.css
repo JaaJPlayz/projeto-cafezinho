@@ -12,14 +12,25 @@
   width: 45px;
   margin-left: 2.5em;
   margin-bottom: -5px;
+  z-index: -1;
 }
 
 .marioImage:hover {
-  opacity: 0;
+  animation-name: goDownPipe;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-
-
 
 .pipe {
   width: 130px;
+}
+
+@keyframes goDownPipe {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(80px);
+  }
 }
