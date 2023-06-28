@@ -1,0 +1,17 @@
+.mario {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 200px;
+}
+
+.marioImage {
+  width: 45px;
+  margin-left: 2.5em;
+  margin-bottom: -5px;
+}
+
+.pipe {
+  width: 130px;
+}
