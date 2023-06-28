@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Components imports
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Mario from "./components/Mario";
 
 // Pages imports
 import Home from "./pages/Home";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/timer" element={<Timer />} />
           <Route path="/badges" element={<Badges />}></Route>
         </Routes>
+        <Mario />
         <Footer />
       </Router>
     </>
