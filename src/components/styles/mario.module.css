@@ -1,9 +1,11 @@
 .mario {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-direction: column;
   width: 200px;
+  position: absolute;
+  transform: translateY(-164.47px);
 }
 
 .marioImage {
@@ -14,4 +16,5 @@
 
 .pipe {
   width: 130px;
+
 }
