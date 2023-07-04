@@ -14,7 +14,11 @@ const Badges = () => {
             <img src="/image/mario-icon.png" alt="mario-icon" width={"50px"} />
           </div>
 
-          {Array.from({ length: 34 }).map((_, index) => (
+          <div className={styles.badgeStand}>
+            <img src="/image/jest-svgrepo-com.svg" alt="mario-icon" width={"50px"} />
+          </div>
+
+          {Array.from({ length: 33 }).map((_, index) => (
             <div key={index} className={styles.badgeStand}>
               <img
                 src="/image/question-mark.png"
