@@ -43,11 +43,11 @@ const Timer = () => {
     <div className={styles.timer}>
       <div className={styles.timerContent}>
         <div className={styles.minutes}>
-          <h1>{minutes.toString().padStart(2, "0")}</h1>
+          <h1>{minutes === 0 || isNaN(minutes) ? "00" : minutes.toString().padStart(2, "0")}</h1>
           <p>Minutos</p>
         </div>
         <div className={styles.seconds}>
-          <h1>{seconds.toString().padStart(2, "0")}</h1>
+          <h1>{seconds === 0 || isNaN(seconds) ? "00" : seconds.toString().padStart(2, "0")}</h1>
           <p>Segundos</p>
         </div>
         <div className={styles.inputsDiv}>
@@ -58,7 +58,7 @@ const Timer = () => {
             step="1"
             placeholder="00"
             id="minutes"
-            value={minutes}
+            value={isNaN(minutes) ? "" : minutes}
             onChange={handleMinutesChange}
           />
           <input
@@ -68,7 +68,7 @@ const Timer = () => {
             step="1"
             placeholder="00"
             id="seconds"
-            value={seconds}
+            value={isNaN(seconds) ? "" : seconds}
             onChange={handleSecondsChange}
           />
           <button onClick={handleClick}>{isTimerRunning ? "Stop" : "Start"}</button>
