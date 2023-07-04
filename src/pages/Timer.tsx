@@ -2,13 +2,13 @@ import styles from "./styles/timer.module.css";
 import { useState, useEffect } from "react";
 
 const Timer = () => {
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
-  const [isTimerRunning, setIsTimerRunning] = useState(false);
+  const [minutes, setMinutes] = useState<number>(0);
+  const [seconds, setSeconds] = useState<number>(0);
+  const [isTimerRunning, setIsTimerRunning] = useState<boolean>(false);
 
   useEffect(() => {
     let totalSeconds = minutes * 60 + seconds;
-    let timer;
+    let timer: any;
 
     if (isTimerRunning && totalSeconds > 0) {
       timer = setInterval(() => {
@@ -25,12 +25,12 @@ const Timer = () => {
     };
   }, [minutes, seconds, isTimerRunning]);
 
-  const handleMinutesChange = (e) => {
+  const handleMinutesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(e.target.value);
     setMinutes(value > 59 ? 59 : value);
   };
 
-  const handleSecondsChange = (e) => {
+  const handleSecondsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(e.target.value);
     setSeconds(value > 59 ? 59 : value);
   };
@@ -58,7 +58,7 @@ const Timer = () => {
             step="1"
             placeholder="00"
             id="minutes"
-            value={isNaN(minutes) ? "" : minutes}
+            value={isNaN(minutes) ? "" : minutes.toString()}
             onChange={handleMinutesChange}
           />
           <input
@@ -68,7 +68,7 @@ const Timer = () => {
             step="1"
             placeholder="00"
             id="seconds"
-            value={isNaN(seconds) ? "" : seconds}
+            value={isNaN(seconds) ? "" : seconds.toString()}
             onChange={handleSecondsChange}
           />
           <button onClick={handleClick}>{isTimerRunning ? "Stop" : "Start"}</button>
