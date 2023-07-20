@@ -15,10 +15,14 @@ const Badges = () => {
           </div>
 
           <div className={styles.badgeStand}>
-            <img src="/image/jest-svgrepo-com.svg" alt="mario-icon" width={"50px"} />
+            <img src="/image/jest-svgrepo-com.svg" alt="jest-icon" width={"50px"} />
           </div>
 
-          {Array.from({ length: 33 }).map((_, index) => (
+          <div className={styles.badgeStand}>
+            <img src="/image/squirrel.svg" alt="zoo-icon" width={"50px"} />
+          </div>
+
+          {Array.from({ length: 32 }).map((_, index) => (
             <div key={index} className={styles.badgeStand}>
               <img
                 src="/image/question-mark.png"
