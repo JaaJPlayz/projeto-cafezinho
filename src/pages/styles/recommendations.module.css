@@ -27,24 +27,22 @@
 .animeContent {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-direction: column;
   padding: 30px;
   background-image: url("/image/coffee_background.jpg");
   min-width: 400px;
-  min-height: 400px;
+  min-height: 565px;
   border-radius: 10px;
 }
 
 .musicContent {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-direction: column;
   padding: 30px;
   background-image: url("/image/coffee_background.jpg");
   min-width: 400px;
-  min-height: 400px;
+  min-height: 565px;
   border-radius: 10px;
 }
 
